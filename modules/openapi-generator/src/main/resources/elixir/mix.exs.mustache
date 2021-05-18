@@ -7,6 +7,7 @@ defmodule {{moduleName}}.Mixfile do
      elixir: "~> {{supportedElixirVersion}}",
      build_embedded: Mix.env == :prod,
      start_permanent: Mix.env == :prod,
+     elixirc_options: [parser_options: [warn_on_unnecessary_quotes: false]],
      deps: deps()]
   end
 
